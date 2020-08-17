@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Build npm'
                 //sh 'mvn --version'
-                withNPM {
+                withNPM(npmrcConfig: 'my-custom-nprc') {
                     sh 'npm --version'
                     sh 'npm install'
                 }
