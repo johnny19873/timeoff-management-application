@@ -11,15 +11,16 @@ pipeline {
         stage('Build npm') {
             steps {
                 echo 'Build npm'
-                //sh 'mvn --version'
                 nodejs(nodeJSInstallationName: 'NodeJs') {
-                    //sh 'npm config ls'
                     sh 'npm --version'
-                    //sh 'npm install'
                     sh 'npm cache clean --force'
                     sh 'npm install'
-                    sh 'npm start'
                 }
+            }
+        }
+        stage('Artifact') {
+            steps {
+                echo 'Building artifact'                
             }
         }
     }
