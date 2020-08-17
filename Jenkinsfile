@@ -1,8 +1,10 @@
 pipeline {
+    agent none 
     stages {
-        stage('build') {
+        stage('Example Build') {
             steps {
-                sh 'npm --version'
+                echo 'Hello, Maven'
+                //sh 'mvn --version'
             }
         }
     }
