@@ -12,8 +12,8 @@ pipeline {
             steps {
                 echo 'Build npm'
                 //sh 'mvn --version'
-                withNPM(npmrcConfig: 'd4433e47-d1b9-4716-842c-fae11bc84b13') {
-                    sh 'npm --version'
+                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
+                    sh 'npm config ls'
                 }
             }
         }
