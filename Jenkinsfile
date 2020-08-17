@@ -15,6 +15,7 @@ pipeline {
                 nodejs(nodeJSInstallationName: 'NodeJs') {
                     //sh 'npm config ls'
                     sh 'npm --version'
+                    sh 'npm install'
                 }
             }
         }
