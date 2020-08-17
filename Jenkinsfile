@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Build npm'
                 //sh 'mvn --version'
-                withNPM() {
+                withNPM {
                     sh 'npm --version'
                     sh 'npm install'
                 }
