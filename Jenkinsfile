@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Build npm'
                 //sh 'mvn --version'
-                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
+                nodejs(nodeJSInstallationName: 'NodeJs') {
                     sh 'npm config ls'
                 }
             }
