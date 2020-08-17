@@ -1,0 +1,12 @@
+Steps:
+
+1. Fork on https://github.com/johnny19873/timeoff-management-application
+2. Service Hook configured to connect Github to Jenkins.
+3. Jenkins in Docker.
+4. Job created in Jenkins to manage PipeLine as Code.
+5. Artifactory in Docker.
+6. Export Jenkins image.
+
+https://github.com/johnny19873/timeoff-management-application
+
+https://hub.docker.com/repository/docker/johnny19873/jenkins_johnny
