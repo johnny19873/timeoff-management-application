@@ -18,7 +18,7 @@ pipeline {
                     //sh 'npm install'
                     sh 'npm cache clean --force'
                     sh 'npm install'
-                    //sh 'npm start'
+                    sh 'npm start'
                 }
             }
         }
