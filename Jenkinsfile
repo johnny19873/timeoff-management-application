@@ -13,7 +13,8 @@ pipeline {
                 echo 'Build npm'
                 //sh 'mvn --version'
                 nodejs(nodeJSInstallationName: 'NodeJs') {
-                    sh 'npm config ls'
+                    //sh 'npm config ls'
+                    sh 'npm --version'
                 }
             }
         }
