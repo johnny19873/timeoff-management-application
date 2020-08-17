@@ -17,7 +17,7 @@ pipeline {
                     sh 'npm --version'
                     //sh 'npm install'
                     sh 'npm install --save sqlite3'
-                    sh 'npm start'
+                    //sh 'npm start'
                 }
             }
         }
