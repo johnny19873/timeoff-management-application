@@ -16,7 +16,7 @@ pipeline {
                     //sh 'npm config ls'
                     sh 'npm --version'
                     //sh 'npm install'
-                    sh 'npm cache clean sqlite3'
+                    sh 'npm cache clean'
                     sh 'npm install --save sqlite3'
                     //sh 'npm start'
                 }
